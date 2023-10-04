@@ -1,0 +1,319 @@
+/* Estilos generales */
+/* Estilos para el hero */
+header {
+    text-align: center;
+    background-color: #487ee2; /* azul */
+    color: rgb(15, 15, 15);
+    padding: 20px;
+}
+
+/* Estilos para el contenedor del logo en la parte superior izquierda */
+.logo-container {
+    float: left; /* Coloca el contenedor a la izquierda del header */
+    margin: 10px 0 5px 10px; /* Ajusta los márgenes según sea necesario */
+    width: 5%; /* Establece el ancho del contenedor en un 20% del header */
+}
+
+/* Estilos para el logo dentro del contenedor */
+.logo-container img {
+    width: 100%; /* El logo ocupará todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto del logo */
+}
+
+/* Estilos para el contenedor del logo en la parte inferior izquierda */
+.bottom-left {
+    float: left; /* Coloca el contenedor a la izquierda del footer */
+    margin: 10px 0 10px 20px; /* Ajusta los márgenes según sea necesario */
+    width: 80px; /* Establece un ancho fijo de 5px para el contenedor */
+}
+
+/* Estilos para el logo dentro del contenedor en la parte inferior izquierda */
+.bottom-left img {
+    width: 100%; /* El logo ocupará todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto del logo */
+}
+
+/* Estilos para el body */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke; /* blanco */
+}
+
+/* Estilos para el contenedor de la galería */
+.galeria-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho de la galería según tu diseño */
+    height: 590px; /* Alto de la galería */
+    margin: 0 auto; /* Centrar horizontalmente la galería */
+    position: relative;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño de la galería */
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+/* Estilos para los botones de anterior y siguiente */
+.botones {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+    width: 80%; /* Ajusta el ancho de los botones según tu diseño */
+    margin: 10px auto; /* Margen para separar los botones de la galería */
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Estilo específico para los botones de anterior y siguiente */
+#anterior, #siguiente {
+    font-size: 12px; /* Tamaño de fuente más pequeño para los botones */
+}
+
+/* Estilos para ocultar las imágenes que no se muestran */
+.imagen:not(.visible) {
+    display: none;
+}
+
+/* Estilos para el footer */
+footer {
+    height: 150px;
+    text-align: center;
+    background-color: #487ee2; /* azul */
+    color: rgb(15, 15, 15);
+    padding: 10px;
+    clear: both; /* Evita que los elementos floten uno al lado del otro */ 
+}
+
+/* Estilos para los iconos de redes sociales */
+.redes-sociales a {
+    color: white; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+    margin: 0 10px; /* Espacio entre los iconos */
+    text-decoration: none;
+}
+
+/* Estilos para los iconos de redes sociales en hover */
+.redes-sociales a:hover {
+    color: #ddd; /* Cambiar el color del icono en hover */
+}
+
+/* Estilos para el menú en la parte superior derecha */
+nav {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+    right: 20px; /* Ajusta la distancia desde la derecha según tus preferencias */
+    background-color: transparent; /* Fondo transparente */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul li a {
+    color: black; /* Color del texto del menú */
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+nav ul li a:hover {
+    border: 1px solid gray;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos para el menú */
+nav ul li a {
+    color: black; /* Color del texto en negro */
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent; /* Borde transparente por defecto */
+    transition: border 0.3s; /* Transición suave para el borde */
+}
+
+/* Estilos para el menú en hover */
+nav ul li a:hover {
+    border: 1px solid rgb(97, 97, 97); /* Agregar un borde gris en hover */
+    text-decoration: underline; /* Subrayar el texto en hover */
+}
+
+/* Estilos para la sección de habilidades */
+#habilidades {
+    background-color: rgb(207, 206, 206);
+    padding: 20px;
+    text-align: left;
+}
+
+#habilidades h2 {
+    font-size: 24px;
+}
+
+#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Alinea la lista a la izquierda */
+}
+
+#habilidades li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+caption {
+    padding: 20px;
+}
+
+/* Estilos específicos */
+.proyecto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    background-color: rgb(207, 206, 206);
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    max-width: 500px;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(207, 206, 206); /* Cambia el color de fondo a un gris más oscuro */
+    border: 1px solid rgb(207, 206, 206);
+    border-radius: 5px;
+    float: left; /* Alinea el formulario a la izquierda */
+}
+
+.contenido {
+    margin: 20px auto; /* Centra el contenido en la página y agrega márgenes */
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgb(207, 206, 206);
+    border: 3px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    float: left;
+    clear: both; /* Evita que los elementos floten uno al lado del otro */
+    margin-left: 10px; /* Margen izquierdo de 10px */
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la respuesta del formulario */
+#respuesta {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos para los mensajes de error (puedes personalizar estos estilos si deseas) */
+.error {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    transition: border 0.3s; /* Transición suave para el borde */
+}
+
+/* Estilos para los campos de entrada en hover */
+input[type="text"]:hover,
+textarea:hover {
+    border: 1px solid gray; /* Cambiar el borde a gris en hover */
+}
+
+/* Estilos para las secciones con márgenes */
+section {
+    padding: 20px; /* Espacio interno alrededor del contenido de cada sección */
+    margin: 20px; /* Márgenes alrededor de cada sección */
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icon {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #080808; /* Color del ícono (azul en este ejemplo) */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los íconos */
+}
