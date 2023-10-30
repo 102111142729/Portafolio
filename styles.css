@@ -10,7 +10,7 @@ header {
 /* Estilos para el contenedor del logo en la parte superior izquierda */
 .logo-container {
     float: left; /* Coloca el contenedor a la izquierda del header */
-    margin: 10px 0 5px 10px; /* Ajusta los márgenes según sea necesario */
+    margin:25px 0 5px 5px;  /* Ajusta los márgenes según sea necesario */
     width: 5%; /* Establece el ancho del contenedor en un 20% del header */
 }
 
@@ -316,4 +316,32 @@ section {
     color: #080808; /* Color del ícono (azul en este ejemplo) */
     text-decoration: none; /* Eliminar subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los íconos */
+}
+
+/* Estilos para dispositivos de mayor tamaño (tabletas y ordenadores) */
+.menu-responsive {
+    display: block; /* Ocultar el menú en dispositivos más grandes */
+}
+
+/* Estilos para el menú en dispositivos móviles */
+@media (max-width: 767px) {
+    .menu-responsive {
+        display: block; /* Mostrar el menú en dispositivos móviles */
+        text-align: center; /* Centrar el texto en dispositivos móviles */
+    }
+
+    .menu-responsive ul {
+        padding: 0;
+    }
+
+    .menu-responsive li {
+        list-style: none;
+        margin: 10px 0; /* Espaciado entre elementos del menú en dispositivos móviles */
+    }
+
+    .menu-responsive a {
+        text-decoration: none;
+        color: #333; /* Color de texto para los enlaces */
+        font-size: 18px; /* Tamaño de fuente para dispositivos móviles */
+    }
 }
