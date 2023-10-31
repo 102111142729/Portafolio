@@ -171,41 +171,36 @@ nav ul li a:hover {
 
 /* Estilos para el icono del menú */
 .icono-menu {
-    display: block; /* Ocultar el icono en pantallas más grandes */
     cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .linea {
-    width: 25px;
+    width: 100%;
     height: 2px;
     background-color: #333;
-    margin: 4px 0;
+    margin: 6px 0;
 }
 
 /* Estilos para las opciones del menú */
 .opciones-menu {
     list-style: none;
     display: flex;
+    position: absolute;
+    top: 50px; /* Espaciado desde la parte superior */
+    right: 0; /* Alineado a la derecha */
+    background-color: #fff; /* Color de fondo del menú desplegable */
+    flex-direction: column;
+    display: none; /* Ocultar las opciones del menú por defecto */
+    z-index: 2; /* Asegura que el menú desplegable esté en la parte superior */
 }
 
-.opciones-menu li {
-    margin-right: 20px;
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 767px) {
-    .icono-menu {
-        display: block; /* Mostrar el icono en dispositivos móviles */
-    }
-
-    .opciones-menu {
-        display: block; /* Ocultar las opciones del menú en dispositivos móviles */
-        flex-direction: column;
-    }
-
-    .opciones-menu.visible {
-        display: block; /* Mostrar las opciones del menú cuando se hace clic en el icono */
-    }
+.opciones-menu.visible {
+    display: block; /* Mostrar las opciones del menú cuando se hace clic en el icono */
 }
 
 /* Estilos para la sección de habilidades */
