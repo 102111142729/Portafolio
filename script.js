@@ -38,9 +38,6 @@ botonAnterior.addEventListener("click", mostrarImagenAnterior);
 // Mostrar la primera imagen al cargar la página
 mostrarImagen(indiceActual);
 
-const iconoMenu = document.querySelector(".icono-menu");
-const opcionesMenu = document.querySelector(".opciones-menu");
-
 iconoMenu.addEventListener("click", () => {
     opcionesMenu.classList.toggle("visible");
 });
