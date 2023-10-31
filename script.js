@@ -44,3 +44,10 @@ const opcionesMenu = document.querySelector(".opciones-menu");
 iconoMenu.addEventListener("click", () => {
     opcionesMenu.classList.toggle("visible");
 });
+
+const iconoMenu = document.getElementById("icono-menu");
+const opcionesMenu = document.querySelector(".opciones-menu");
+
+iconoMenu.addEventListener("click", () => {
+    opcionesMenu.classList.toggle("visible");
+});
