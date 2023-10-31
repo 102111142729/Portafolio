@@ -171,7 +171,7 @@ nav ul li a:hover {
 
 /* Estilos para el icono del menú */
 .icono-menu {
-    display: none; /* Ocultar el icono en pantallas más grandes */
+    display: block; /* Ocultar el icono en pantallas más grandes */
     cursor: pointer;
 }
 
@@ -199,7 +199,7 @@ nav ul li a:hover {
     }
 
     .opciones-menu {
-        display: none; /* Ocultar las opciones del menú en dispositivos móviles */
+        display: block; /* Ocultar las opciones del menú en dispositivos móviles */
         flex-direction: column;
     }
 
