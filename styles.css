@@ -169,6 +169,45 @@ nav ul li a:hover {
     text-decoration: underline; /* Subrayar el texto en hover */
 }
 
+/* Estilos para el icono del menú */
+.icono-menu {
+    display: none; /* Ocultar el icono en pantallas más grandes */
+    cursor: pointer;
+}
+
+.linea {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Estilos para las opciones del menú */
+.opciones-menu {
+    list-style: none;
+    display: flex;
+}
+
+.opciones-menu li {
+    margin-right: 20px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .icono-menu {
+        display: block; /* Mostrar el icono en dispositivos móviles */
+    }
+
+    .opciones-menu {
+        display: none; /* Ocultar las opciones del menú en dispositivos móviles */
+        flex-direction: column;
+    }
+
+    .opciones-menu.visible {
+        display: block; /* Mostrar las opciones del menú cuando se hace clic en el icono */
+    }
+}
+
 /* Estilos para la sección de habilidades */
 #habilidades {
     background-color: rgb(207, 206, 206);
