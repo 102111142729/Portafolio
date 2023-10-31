@@ -154,6 +154,18 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Estilos para dispositivos móviles y tabletas */
+@media (max-width: 767px) {
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333; /* Color de fondo del menú */
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        z-index: 1000; /* Asegura que esté en la parte superior */
+    }
 /* Estilos para el menú */
 nav ul li a {
     color: black; /* Color del texto en negro */
