@@ -154,18 +154,6 @@ nav ul li {
     margin-right: 20px;
 }
 
-/* Estilos para dispositivos móviles y tabletas */
-@media (max-width: 767px) {
-    .menu-mobile {
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: #333; /* Color de fondo del menú */
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        z-index: 1000; /* Asegura que esté en la parte superior */
-    }
 /* Estilos para el menú */
 nav ul li a {
     color: black; /* Color del texto en negro */
@@ -207,7 +195,7 @@ nav ul li a:hover {
     right: 0; /* Alineado a la derecha */
     background-color: #fff; /* Color de fondo del menú desplegable */
     flex-direction: column;
-    display: none; /* Ocultar las opciones del menú por defecto */
+    display: block; /* Ocultar las opciones del menú por defecto */
     z-index: 2; /* Asegura que el menú desplegable esté en la parte superior */
 }
 
